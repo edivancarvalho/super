@@ -1,0 +1,25 @@
+/* Adicione este estilo ao seu arquivo de estilo CSS ou SCSS */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Alinha à esquerda horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin-left: 30px; /* Adicione uma margem à esquerda para mover o conteúdo para a direita */
+}
+
+.grid-item {
+  margin: 10px;
+  border: 1px solid #5c0b0b;
+  padding: 15px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.example-card {
+  max-width: 300px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

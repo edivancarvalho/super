@@ -1,0 +1,18 @@
+<h3>Carrinho de Compras</h3>
+
+<div class="cart-item" *ngFor="let item of items">
+  <mat-icon class="pointer-cursor" color="warn" (click)="removeItem(item)">delete</mat-icon>
+  <span>{{ item.nome }}</span>
+  <span>{{ item.preco | currency:'BRL':'symbol':'1.2-2' }}</span>
+
+</div>
+
+<div class="cart-item">
+  <span>Total: </span>
+  <span>{{ totalPrice | currency:'BRL':'symbol':'1.2-2' }}</span>
+</div>
+<div>
+  <button routerLink="/">
+    Home
+  </button>
+</div>
